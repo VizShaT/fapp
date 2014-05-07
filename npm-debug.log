@@ -1,0 +1,57 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'forever' ]
+2 info using npm@1.2.14
+3 info using node@v0.8.22
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 verbose read json C:\Users\kikit\AppData\Roaming\npm\package.json
+6 verbose read json C:\Users\kikit\AppData\Roaming\npm\package.json
+7 verbose cache add [ 'forever', null ]
+8 verbose cache add name=undefined spec="forever" args=["forever",null]
+9 verbose parsed url { pathname: 'forever', path: 'forever', href: 'forever' }
+10 silly lockFile e07f8c4a-forever forever
+11 verbose lock forever C:\Users\kikit\AppData\Roaming\npm-cache\e07f8c4a-forever.lock
+12 silly lockFile e07f8c4a-forever forever
+13 silly lockFile e07f8c4a-forever forever
+14 verbose addNamed [ 'forever', '' ]
+15 verbose addNamed [ null, '' ]
+16 silly lockFile 28ef027b-forever forever@
+17 verbose lock forever@ C:\Users\kikit\AppData\Roaming\npm-cache\28ef027b-forever.lock
+18 silly addNameRange { name: 'forever', range: '', hasData: false }
+19 verbose url raw forever
+20 verbose url resolving [ 'https://registry.npmjs.org/', './forever' ]
+21 verbose url resolved https://registry.npmjs.org/forever
+22 info trying registry request attempt 1 at 23:50:25
+23 http GET https://registry.npmjs.org/forever
+24 info retry will retry, error on last attempt: Error: connect ETIMEDOUT
+25 info trying registry request attempt 2 at 23:50:49
+26 http GET https://registry.npmjs.org/forever
+27 info retry will retry, error on last attempt: Error: connect ECONNREFUSED
+28 info trying registry request attempt 3 at 23:51:50
+29 http GET https://registry.npmjs.org/forever
+30 silly lockFile 28ef027b-forever forever@
+31 silly lockFile 28ef027b-forever forever@
+32 error Error: connect ECONNREFUSED
+32 error     at errnoException (net.js:770:11)
+32 error     at Object.afterConnect [as oncomplete] (net.js:761:19)
+32 error  { [Error: connect ECONNREFUSED]
+32 error   code: 'ECONNREFUSED',
+32 error   errno: 'ECONNREFUSED',
+32 error   syscall: 'connect' }
+33 error If you are behind a proxy, please make sure that the
+33 error 'proxy' config is set properly.  See: 'npm help config'
+34 error System Windows_NT 6.2.9200
+35 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "-g" "forever"
+36 error cwd C:\NodeApp\MyApp
+37 error node -v v0.8.22
+38 error npm -v 1.2.14
+39 error syscall connect
+40 error code ECONNREFUSED
+41 error errno ECONNREFUSED
+42 error stack Error: connect ECONNREFUSED
+42 error stack     at errnoException (net.js:770:11)
+42 error stack     at Object.afterConnect [as oncomplete] (net.js:761:19)
+43 verbose exit [ 1, true ]

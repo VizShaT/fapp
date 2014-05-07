@@ -1,0 +1,179 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>MarketPlus+</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link href="/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <noscript>
+      <link rel="stylesheet" href="/css/skel-noscript.css" />
+      <link rel="stylesheet" href="/css/style.css" />
+    </noscript>
+    
+      <link href="/bootstrap/css/docs.css" rel="stylesheet">
+      <script src="/bootstrap/js/prettify.js"></script>
+      <script type="text/javascript" src="/bootstrap/js/jquery.js"></script>
+      <script type="text/javascript" src="/bootstrap/js/bootstrap-button.js"></script>
+      <script type="text/javascript" src="/bootstrap/js/bootstrap-modal.js"></script>
+      <script type="text/javascript" src="/bootstrap/js/bootstrap-transition.js"></script>
+      <script type="text/javascript" src="/js/nockclient.js"></script>
+    <link href="font.css" rel="stylesheet" type="text/css" />
+    <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.poptrox.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/init.js"></script>
+    
+    <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+  </head>
+  <body>
+    <div id="thank" class="modal hide fade smallModal">
+      <p>Thank you for your interest in MarketPlus+.<br />We will contact you soon </p>
+    </div>
+  <!-- for signup -->
+    <div id="myModal" class="modal hide fade smallModal">
+      <form id="signup-form" action="/signup" method="post" class="form-horizontal">
+      <div class="modal-header"><a data-dismiss="modal" class="close"></a>
+        <h3>Sign Up Today</h3></div>
+        <div class="modal-body">
+        <fieldset>
+          <div class="control-group">
+          <input type="text" name="username" placeholder="Username" class="input-xlarge uname"/>
+          <span id="imagePlaceHolder"></span>
+          </div>
+          <div class="control-group">
+          <input type="text" name="email" placeholder="Email" class="input-xlarge"/>
+          </div>
+          <div class="control-group">
+          <input type="password" name="password" placeholder="Password" class="input-xlarge"/>
+          </div>
+        </fieldset>
+        </div>
+      <div class="modal-footer"><a href="#" data-dismiss="modal" class="btn">Close</a>
+        <button class="btn btn-primary create-button" type="submit">Create Account</button>
+      </div>
+      </form>
+    </div>
+    <!-- signup end -->
+    <!-- login -->
+    <div id="loginModal" class="modal hide fade smallModal">
+      <form id="login-form" action="/login" method="post" class="form-horizontal">
+      <div class="modal-header"><a data-dismiss="modal" class="close"></a>
+        <h3>Log In</h3></div>
+        <div class="modal-body">
+        <fieldset>
+          <div class="control-group">
+          <input type="text" name="username" placeholder="Username" class="input-xlarge uname"/>
+          <span id="imagePlaceHolder"></span>
+          </div>
+          <div class="control-group">
+          <input type="password" name="password" placeholder="Password" class="input-xlarge"/>
+          </div>
+        </fieldset>
+        </div>
+      <div class="modal-footer">
+        <a href="#" data-dismiss="modal" class="btn">Close</a>
+        <button class="btn btn-primary" type="submit">Log In</button>
+      </div>
+    </form> 
+    </div>
+    <!-- login end -->
+    <!-- Header -->
+      <section id="header">
+        <header>
+          <h1>MarketPlus+</h1>
+          <p>Welcome to the Node.js stockmarket</p>
+        </header>
+        <footer>
+          <a href="#banner" class="button style2 scrolly scrolly-centered">Proceed as anticipated</a>
+        </footer>
+      </section>
+    
+    <!-- Banner -->
+      <section id="banner">
+        
+        
+        <div class="container">
+            <div class="marketing">
+            <div class="row offset2">
+              <div>
+              <h1>Real Prices</h1>
+              <p>Here you will be able to sign up for an account and 
+                create a stock portfolio with live prices. This will 
+                combine the beauty of Social Network with the performance of 
+                Node.js to create a well designed, blazing fast stock 
+                tracking tool.
+              </p>
+              </div>
+              <div>
+              <h1>Live Data</h1>
+              <p>Here you will see the live streamming of real-time data straight into your browser. Once 
+                you have logged into your account you can manage your profile and portfolio for the stockmarket. You can also view the profile of other connected user and can communicate with then through chat console.
+              </p>
+              </div>
+            </div>
+            </div>
+            <header class="jumbotron masthead">
+            <div class="inner">
+              <p class="download-info">
+              <a data-toggle="modal" href="#loginModal" class="button style2 scrolly">Log In</a>
+              <a data-toggle="modal" href="#myModal" class="button style2 scrolly scrolly-centered">Sign Up</a>
+              </p>
+            </div>
+            </header>
+          </div>
+        
+      </section>
+    
+    
+    <!-- Contact -->
+      <article class="container box style3">
+        <header>
+          <h2>Do you need any help ?</h2>
+          <p>Drop a message to us. We will contact you as soon as possible.</p>
+        </header>
+        <form>
+          <div class="row half">
+            <div class="6u"><input type="text" class="text" name="name" placeholder="Name" /></div>
+            <div class="6u"><input type="text" class="text" name="email" placeholder="Email" /></div>
+          </div>
+          <div class="row half">
+            <div class="12u">
+              <textarea name="message" placeholder="Message"></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <div class="12u">
+              <ul class="actions">
+                <li><a data-toggle="modal" href="#thank" class="button form">Send Message</a></li>
+              </ul>
+            </div>
+          </div>
+        </form>
+      </article>
+    
+    
+    
+    <section id="footer">
+      <ul class="icons">
+        <li><a href="#" class="fa fa-twitter solo"><span>Twitter</span></a></li>
+        <li><a href="#" class="fa fa-facebook solo"><span>Facebook</span></a></li>
+        <li><a href="#" class="fa fa-google-plus solo"><span>Google+</span></a></li>
+        <li><a href="#" class="fa fa-pinterest solo"><span>Pinterest</span></a></li>
+        <li><a href="#" class="fa fa-dribbble solo"><span>Dribbble</span></a></li>
+        <li><a href="#" class="fa fa-linkedin solo"><span>LinkedIn</span></a></li>
+      </ul>
+      <div class="copyright">
+        <ul class="menu">
+          <li>&copy; Nockmarket. All rights reserved.</li>
+          <li>@2014</li>
+        </ul>
+      </div>
+    </section>
+
+  </body>
+</html>
